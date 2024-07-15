@@ -8,18 +8,45 @@
     <title> Home </title>        
 </head>
 <body>
-<header> 
-    <nav id="barraTopo"> 
-        <img src="ladinho.png" height="60" width="200"/>
-        <ul>
-            <li> <a href="#">Sobre</a></li>
-            <li> <a href="#">Serviços</a></li>
-            <li> <a href="#">Projetos</a></li>
-            <li> <a href="#">Contato</a></li>
-        </ul>
-        <img src="bannersite.png" height="465" width="1440"/>
-    </nav>
+   <header> 
+         <nav id="barraTopo"> 
 
+             <ul class="menu">
+                <li class="menu__item_home"> 
+                  <a href="#"> <img src="ladinho.png" height="40" width="200"/> </a>
+                </li>
+                <li class="menu__item"> 
+                 <a href="#">Sobre</a>
+                </li>
+                <li class="menu__item com-submenu"> 
+                  <a href="#"> Serviços</a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                         <a href="#">AVCB</a>
+                        </li>
+                        <li class="submenu__item">
+                         <a href="#">CLCB</a>
+                        </li>
+                        <li class="submenu__item">
+                         <a href="#">Projeto Técnico</a>
+                        </li>
+                        <li class="submenu__item">
+                         <a href="#">Projeto Simplificado</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                 <a href="#">Projetos</a>
+                </li>
+                <li class="menu__item">
+                 <a href="#">Contato</a>
+                </li>
+            </ul>
+         </nav>
+   </header>
+<nav> 
+    <img src="bannersite.png" height="465" width="1440"/>
+</nav>
     <section> 
         <article>
             <h2> Missão </h2>
@@ -32,7 +59,7 @@
                  e liderando o mercado com excelência em serviços e comprometimento com a segurança.</p>
         </article>
         <article>
-            <h2> Visão </h2>
+            <h2> Valores </h2>
             <p> Valorizo a segurança, excelência, qualidade, ética, transparência, colaboração e respeito, assegurando a integridade
                  e a mais alta qualidade nos projetos personalizados, sempre com foco na proteção de vidas e patrimônios.</p>
         </article>
@@ -41,12 +68,42 @@
     <section> 
         <h2>Serviços</h2>
         <article> 
-
+            <ul class="serviços">
+                <li class="serviço_avcb"> 
+                  <a href="#"> <img src="avcb.png" height="384" width="308"/> </a>
+                </li>
+                <li class="serviço_clcb">
+                    <a href="#"> <img src="clcb.png" height="384" width="308"/>  </a> 
+                </li>
+                <li class="serviço_pt">
+                 <a href="#"> <img src="pt.png" height="384" width="308"/> </a>
+                </li>
+                <li class="serviço_ps"> 
+                 <a href="#"> <img src="ps.png" height="384" width="308"/> </a>
+                </li>
+            </ul>   
 
         </article>
     </section>
-
+    <section> 
+        <article>
+            <ul class="projetos">
+                <li class="projeto_bridgestone"> 
+                  <a href="#"> <img src="bridgestone.jpg" height="165" width="326"/> </a>
+                </li>
+                <li class="projeto_bemMais">
+                    <a href="#"> <img src="bemMais.jpg" height="165" width="326"/>  </a> 
+                </li>
+                <li class="projeto_grupoSbf">
+                 <a href="#"> <img src="grupoSbf.png" height="165" width="326"/> </a>
+                </li>
+                <li class="projeto_starex"> 
+                 <a href="#"> <img src="starex.png" height="165" width="326"/> </a>
+                </li>
+            </ul>   
+        </article>
+    </section>
+       
 
 </body>
 
-</header>

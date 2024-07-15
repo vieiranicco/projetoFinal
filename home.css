@@ -14,3 +14,85 @@ header nav ul
 {
     list-style-type:none;
 }
+
+.menu {
+    margin: 20px 0;
+    list-style: none;
+   }
+   .menu__item_home {
+    display: inline-block;
+    width: 200;
+    position: relative;
+   }
+   .menu__item {
+    display: inline-block;
+    width: 13%;
+    position: relative;
+   }
+   .submenu {
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: rgb(255, 3, 3);
+   }
+   .com-submenu:hover .submenu {
+    display: block;
+   }
+
+   .projetos {
+    margin: 20px 0;
+    list-style: none;
+   }
+
+   .projeto_bridgestone {
+    display: inline-block;
+    width: 200;
+    position: relative;
+   }
+
+   .projeto_bemMais {
+    display: inline-block;
+    width: 200;
+    position: relative;
+   }
+
+   .projeto_grupoSbf {
+    display: inline-block;
+    width: 200;
+    position: relative;
+   }
+
+   .projeto_starex {
+    display: inline-block;
+    width: 200;
+    position: relative;
+   }
+
+   .serviços {
+    margin: 20px 0;
+    list-style: none;
+   }
+
+   .serviço_avcb {
+    display: inline-block;
+    width: 200;
+    position: relative;
+   }
+
+   .serviço_clcb {
+    display: inline-block;
+    width: 200;
+    position: relative;
+   }
+
+   .serviço_pt {
+    display: inline-block;
+    width: 200;
+    position: relative;
+   }
+
+   .serviço_ps {
+    display: inline-block;
+    width: 200;
+    position: relative;
+   }
