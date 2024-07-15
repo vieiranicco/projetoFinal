@@ -5,7 +5,7 @@
 }
 #barraTopo
 {
-    background-color:aquamarine;
+    background-color:black;
     width: 1440px;
     height: 90px;
 }
@@ -15,25 +15,53 @@ header nav ul
     list-style-type:none;
 }
 
+a:link {
+    color:whitesmoke;
+    text-decoration: none;
+}
+a:visited {
+    color:#F32F2F;
+    text-decoration:none;
+}
+a:active {
+    background-color:#F32F2F;
+    text-decoration:none;
+}
+a:hover {
+    color:whitesmoke;
+    text-decoration:none;
+}
+
 .menu {
     margin: 20px 0;
     list-style: none;
    }
+
+   .logo_home{
+    margin-top:50px;
+   }
+
    .menu__item_home {
+    color:#F32F2F;
     display: inline-block;
+    bottom: 20px;
     width: 200;
     position: relative;
    }
    .menu__item {
+    color:#F32F2F;
     display: inline-block;
-    width: 13%;
+    left: 900px;
+    bottom: 35px;
+    width: 70px;
+    height:18.4px;
     position: relative;
    }
    .submenu {
     position: absolute;
     display: none;
-    width: 200px;
-    background-color: rgb(255, 3, 3);
+    width: 150px;
+    background-color: black;
    }
    .com-submenu:hover .submenu {
     display: block;
@@ -52,18 +80,21 @@ header nav ul
 
    .projeto_bemMais {
     display: inline-block;
+    margin-left:30px;
     width: 200;
     position: relative;
    }
 
    .projeto_grupoSbf {
     display: inline-block;
+    margin-left:30px;
     width: 200;
     position: relative;
    }
 
    .projeto_starex {
     display: inline-block;
+    margin-left:30px;
     width: 200;
     position: relative;
    }
@@ -81,18 +112,72 @@ header nav ul
 
    .serviço_clcb {
     display: inline-block;
+    margin-left:50px;
     width: 200;
     position: relative;
    }
 
    .serviço_pt {
     display: inline-block;
+    margin-left:50px;
     width: 200;
     position: relative;
    }
 
    .serviço_ps {
     display: inline-block;
+    margin-left:50px;
     width: 200;
     position: relative;
+   }
+
+
+
+   .mvv {
+    margin: 20px 0;
+    list-style: none;
+   }
+
+
+   
+   .titles_mvv  {
+    color:#F32F2F;
+    text-decoration:none;
+   }
+
+   .txt_mvv {
+    display: inline-block;
+    width:200;
+    position: relative;
+   }
+
+   .missao {
+    display: inline-block;
+    width: 400px;
+    height:200px;
+    position: relative;
+   }
+
+   .visao {
+    display: inline-block;
+    margin-left:110px;
+    width: 400px;
+    height:200px;
+    position: relative;
+   }
+
+   .valores {
+    display: inline-block;
+    margin-left:110px;
+    width: 400px;
+    height:200px;
+    position: relative;
+   }
+
+   .txt_align {
+    text-align: center;
+    color:#F32F2F;
+    text-decoration:none;
+    margin-top:30px;
+    margin-bottom:30px;
    }
