@@ -180,4 +180,39 @@ a:hover {
     text-decoration:none;
     margin-top:30px;
     margin-bottom:30px;
-   }
+}
+
+div.form_example_ns {
+    display: inline-block;
+}
+
+div.form_example {
+  display: table-row;
+}
+
+label,
+input {
+  margin-bottom: 10px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+.rodape
+{
+    background-color:black;
+    width: 1440px;
+    height: 354px;
+    list-style-type:none;
+    text-align: center;
+}
+footer
+{
+    list-style-type:none;
+}
+
+.logo_footer {
+    margin-top:80px;
+    margin-bottom:15px;
+}
