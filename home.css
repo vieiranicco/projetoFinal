@@ -243,3 +243,60 @@ footer
     cursor:pointer;
     border-radius:5px;
 }
+
+.redes_sociais {
+    display: inline-block;
+    position:relative;
+    bottom:230px;
+    left:630px;
+    color:black;
+    font-size: 16px;    
+    padding: 12px 24px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.aside_rs {
+    display: inline-block;
+    position:relative;
+    bottom:150px;
+    left:270px;
+    border-right: 15px;
+    color:white;
+    font-size: 16px;    
+    padding: 12px 24px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.aside_zap {
+display: inline-block;
+position: relative;
+margin-right:15px;
+}
+
+.aside_insta {
+display: inline-block;
+position: relative;
+margin-right:15px;
+}
+
+.aside_linkedin {
+display: inline-block;
+position: relative;
+margin-right:15px;
+}
+
+.lista_numerada {
+    list-style: decimal;
+}
+.lista {
+    margin-bottom:5px;
+}
+
+.titles_subtitulo {
+    color:black;
+    text-decoration:none;
+}
