@@ -182,8 +182,23 @@ a:hover {
     margin-bottom:30px;
 }
 
+.form_example {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+form input, form textarea {
+    outline: unset;
+    padding: 20px;  
+    width: 500px;
+    border: 1px solid #F32F2F;
+    border-radius:20px;
+}
+
 div.form_example_ns {
     display: inline-block;
+    text-align: justify;
 }
 
 div.form_example {
