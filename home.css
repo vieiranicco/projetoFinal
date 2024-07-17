@@ -191,7 +191,7 @@ a:hover {
 form input, form textarea {
     outline: unset;
     padding: 20px;  
-    width: 500px;
+    width: 300px;
     border: 1px solid #F32F2F;
     border-radius:20px;
 }
@@ -199,6 +199,27 @@ form input, form textarea {
 div.form_example_ns {
     display: inline-block;
     text-align: justify;
+    margin-bottom: 15px;
+
+}
+
+div.form_example_tc {
+    display: inline-block;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.form_full {
+    width: 660px;
+
+}
+
+.nome {
+    margin-right: 15px;
+}
+
+.tel {
+    margin-right: 15px;
 }
 
 div.form_example {
@@ -255,7 +276,7 @@ footer
 
 .btn_form {
     position:relative;
-    left:500px;
+    left:607px;
     background-color: #F32F2F;
     color:white;
     font-size: 16px;    
@@ -268,8 +289,8 @@ footer
 .redes_sociais {
     display: inline-block;
     position:relative;
-    bottom:230px;
-    left:630px;
+    bottom:500px;
+    left:820px;
     color:black;
     font-size: 16px;    
     padding: 12px 24px;
@@ -281,8 +302,8 @@ footer
 .aside_rs {
     display: inline-block;
     position:relative;
-    bottom:150px;
-    left:270px;
+    bottom:400px;
+    left:450px;
     border-right: 15px;
     color:white;
     font-size: 16px;    
