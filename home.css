@@ -207,6 +207,12 @@ label {
     list-style-type:none;
     text-align: center;
 }
+
+.rodape__item {
+    color:#F32F2F;
+    text-decoration:none;
+}
+
 footer
 {
     list-style-type:none;
@@ -225,7 +231,7 @@ footer
     -ms-transform: translate(-50%, -50%);
     background-color: #F32F2F;
     color:white;
-    font-size: 16px;    
+    font-size: 16px;  
     padding: 12px 24px;
     border:none;
     cursor:pointer;
