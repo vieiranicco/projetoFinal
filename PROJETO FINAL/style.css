@@ -64,7 +64,6 @@ header.Menus {
 
 nav.Banner {
     grid-area: Banner;
-    background-color: aquamarine;
     place-items: center;
     width: auto;
     height: auto;
@@ -81,12 +80,22 @@ h2.titulo {
     text-decoration: solid;
     color: red;
     font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
-section.Missão  {
+p.texto {
+    display: inline-flex;
+    text-align: center;
+    text-decoration: solid;
+    color: black;
+    font-weight: bold;
+}
+
+section.Missão {
     grid-area: Missão;
     text-align: center;
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
@@ -94,10 +103,10 @@ section.Missão  {
     margin: 10px;
 }
 
-section.Visão {
+section.Visão  {
     grid-area: Visão;
     text-align: center;
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -107,14 +116,14 @@ section.Visão {
 section.Valores {
     grid-area: Valores;
     text-align: center;
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 10px;
 }
 
-section.Serviços {
+section.Serviços h2 {
     grid-area: Serviços;
     text-align: center;
     display: flex;
@@ -156,7 +165,7 @@ section.CLCB article {
     height: 100%;
 }
 
-section.CLCB article a.box_botão {
+section article a.box_botão {
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -179,14 +188,6 @@ section.Proj_Técnico article {
     height: 100%;
 }
 
-section.Proj_Técnico article a.box_botão {
-    align-items: center;
-    justify-items: center;
-    position: absolute;
-    margin-block-start: 300px;
-}
-
-
 section.Consultoria article {
     grid-area: Consultoria;
     display: flex;
@@ -203,21 +204,8 @@ section.Consultoria article {
     height: 100%;
 }
 
-section.Consultoria article a.box_botão {
-    align-items: center;
+button.botão_serviços {
     justify-content: center;
-    position: absolute;
-    margin-block-start: 300px;
-}
-
-section.AVCB article a.box_botão {
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    margin-block-start: 300px;
-}
-
-.botão_serviços {
     align-items: center;
     background-color: #F32F2F;
     color:white;
@@ -236,12 +224,106 @@ section.AVCB article a.box_botão {
 
 section.Carrossel {
     grid-area: Carrossel;
-    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 25px;
+}
+
+.img_carrossel {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 section.Contato {
     grid-area: Contato;
-    background-color: antiquewhite;
+    margin: 25px;
+}
+
+#grade {
+    display: grid;
+    grid-template-areas: 
+    "Form_Email" 
+    "Form_NomeSobrenome"
+    "Form_CelTelefone"
+    "Form_Assunto"
+    "Form_Mensagem"
+    "Form_Botão";
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+}
+
+form div.Form_Email {
+    grid-area: Form_Email;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 5px;
+}
+
+div form div.Form_NomeSobrenome {
+    grid-area: Form_NomeSobrenome;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 5px;
+}
+
+form div.Form_CelTelefone {
+    grid-area: Form_CelTelefone;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin: 5px;
+}
+
+form div.Form_Assunto {
+    grid-area: Form_Assunto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 5px;
+}
+
+form div.Form_Mensagem {
+    grid-area: Form_Mensagem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 5px;
+}
+
+div.Form_Botão {
+    grid-area: Form_Botão;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 5px;
+}
+
+.Botão_Form {
+    background-color: #F32F2F;
+    color:white;
+    font-size: 16px;    
+    padding: 12px 24px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+form input, form textarea {
+    display: flex;
+    outline: unset;
+    padding: 2px;  
+    width: auto;
+    border: 1px solid #F32F2F;
+    border-radius:10px;
 }
 
 section.Redes_Sociais {
