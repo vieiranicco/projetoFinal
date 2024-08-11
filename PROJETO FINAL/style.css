@@ -1,0 +1,255 @@
+body 
+{
+    font-family:"Roboto", "Fira Code", "Arial";
+}
+
+#grid {
+    display: grid;
+    grid-template-areas:
+    "Cabeçalho"
+    "Banner"
+    "Missão"
+    "Visão"
+    "Valores"
+    "Serviços"
+    "AVCB"
+    "CLCB"
+    "Proj_Técnico"
+    "Consultoria"
+    "Carrossel"
+    "Contato"
+    "Redes_Sociais"
+    "Rodapé";
+    grid-template-rows: repeat(14, auto);
+    grid-template-columns: 1fr;
+    border: 1px solid black;
+}
+
+div.Cabeçalho {
+    grid-area: Cabeçalho;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header.Logo_home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: auto;
+    height: auto;
+}
+
+.logo_home .img_logo {
+    width: 100%;
+    height: 100%;
+}
+
+header.Menus {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: black;
+    width: auto;
+    height: auto;
+}
+
+.logo_menus .img_sanduiche {
+    width: 30px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+nav.Banner {
+    grid-area: Banner;
+    background-color: aquamarine;
+    place-items: center;
+    width: auto;
+    height: auto;
+}
+
+.img_banner {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+h2.titulo {
+    text-align: center;
+    text-decoration: solid;
+    color: red;
+    font-weight: bold;
+}
+
+section.Missão  {
+    grid-area: Missão;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+section.Visão {
+    grid-area: Visão;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+section.Valores {
+    grid-area: Valores;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+section.Serviços {
+    grid-area: Serviços;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+section.AVCB article {
+    grid-area: AVCB;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;    
+    width: auto;
+    height: auto;
+    margin: 25px;
+}
+
+.AVCB {
+    width: 100%;
+    height: 100%;
+}
+
+section.CLCB article {
+    grid-area: CLCB;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 25px;
+}
+
+.CLCB {
+    width: 100%;
+    height: 100%;
+}
+
+section.CLCB article a.box_botão {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-block-start: 300px;
+}
+
+section.Proj_Técnico article {
+    grid-area: Proj_Técnico;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 25px;
+}
+
+.Proj_Técnico {
+    width: 100%;
+    height: 100%;
+}
+
+section.Proj_Técnico article a.box_botão {
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    margin-block-start: 300px;
+}
+
+
+section.Consultoria article {
+    grid-area: Consultoria;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 25px;
+}
+
+.Consultoria {
+    width: 100%;
+    height: 100%;
+}
+
+section.Consultoria article a.box_botão {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-block-start: 300px;
+}
+
+section.AVCB article a.box_botão {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-block-start: 300px;
+}
+
+.botão_serviços {
+    align-items: center;
+    background-color: #F32F2F;
+    color:white;
+    font-size: 16px;  
+    padding: 12px 24px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.img_serviços {
+    border-radius: 5%;
+    border-color: black;
+    border-style: groove;
+}
+
+section.Carrossel {
+    grid-area: Carrossel;
+    background-color: aquamarine;
+}
+
+section.Contato {
+    grid-area: Contato;
+    background-color: antiquewhite;
+}
+
+section.Redes_Sociais {
+    grid-area: Redes_Sociais;
+    background-color: aquamarine;
+}
+
+footer.Rodapé {
+    grid-area: Rodapé;
+    background-color: antiquewhite;
+}
