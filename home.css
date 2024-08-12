@@ -301,9 +301,6 @@ footer
 
 .aside_rs {
     display: inline-block;
-    position:relative;
-    bottom:400px;
-    left:450px;
     border-right: 15px;
     color:white;
     font-size: 16px;    
@@ -315,19 +312,16 @@ footer
 
 .aside_zap {
 display: inline-block;
-position: relative;
 margin-right:15px;
 }
 
 .aside_insta {
 display: inline-block;
-position: relative;
 margin-right:15px;
 }
 
 .aside_linkedin {
 display: inline-block;
-position: relative;
 margin-right:15px;
 }
 
