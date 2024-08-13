@@ -628,3 +628,108 @@ ul.serv {
     }
 
 }
+
+#grid_AVCB {
+    display: grid;
+    grid-template-areas:
+    "Cabeçalho"
+    "Banner"
+    "Serv_AVCB"
+    "Contato"
+    "Redes_Sociais"
+    "Rodapé";
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+}
+
+section.Serv_AVCB, section.Serv_CLCB {
+    grid-area: Serv_AVCB;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+li.lista {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+#grid_CLCB {
+    display: grid;
+    grid-template-areas:
+    "Cabeçalho"
+    "Banner"
+    "Serv_CLCB"
+    "Contato"
+    "Redes_Sociais"
+    "Rodapé";
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+}
+
+section.Serv_CLCB {
+    grid-area: Serv_CLCB;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+#grid_Proj_Tec {
+    display: grid;
+    grid-template-areas:
+    "Cabeçalho"
+    "Banner"
+    "Serv_Proj_Tec"
+    "Contato"
+    "Redes_Sociais"
+    "Rodapé";
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+}
+
+section.Serv_Proj_Tec {
+    grid-area: Serv_Proj_Tec;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+#grid_Consultoria {
+    display: grid;
+    grid-template-areas:
+    "Cabeçalho"
+    "Banner"
+    "Serv_Consultoria"
+    "Contato"
+    "Redes_Sociais"
+    "Rodapé";
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+}
+
+section.Serv_Consultoria {
+    grid-area: Serv_Consultoria;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+}
