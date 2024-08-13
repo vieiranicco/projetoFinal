@@ -14,6 +14,7 @@
     grid-template-areas:
     "Cabeçalho"
     "Banner"
+    "Sobre"
     "Missão"
     "Visão"
     "Valores"
@@ -26,7 +27,7 @@
     "Contato"
     "Redes_Sociais"
     "Rodapé";
-    grid-template-rows: repeat(14, auto);
+    grid-template-rows: repeat(15, auto);
     grid-template-columns: 1fr;
 }
 
@@ -81,6 +82,17 @@ nav.Banner {
     height: 100%;
 }
 
+section.Sobre {
+    grid-area: Sobre;
+    text-align: center;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+}
+
 h2.titulo {
     justify-content: center;
     display: flex;
@@ -129,6 +141,14 @@ section.Valores {
     align-items: center;
     justify-content: center;
     margin: 10px;
+}
+
+.img_mvv {
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 40%;
+    height: 40%;
 }
 
 section.Serviços {
@@ -346,6 +366,7 @@ form input {
     font-family: "Darker Grotesque";
     font-size: 16px;
     padding-left: 8px;
+    box-shadow: -5px 0 5px rgba(0,0,0,0.25);
 }
 
 form textarea {
@@ -359,6 +380,7 @@ form textarea {
     font-family: "Darker Grotesque";
     font-size: 16px;
     padding-left: 8px;
+    box-shadow: -5px 0 5px rgba(0,0,0,0.25);
 }
 
 section.Redes_Sociais article {
@@ -481,6 +503,7 @@ header{
     flex-direction: row;    
     align-items: center;
     justify-content: flex-end;
+    font-weight: bold;
 }
 
 header a{
