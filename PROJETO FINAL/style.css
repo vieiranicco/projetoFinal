@@ -5,7 +5,6 @@
     border:0;
 }
 
-
 #grid {
     display: grid;
     grid-template-areas:
@@ -785,10 +784,14 @@ nav.Banner_Consultoria {
     "Tit_Brid"
     "Carrossel_Brid"
     "Explicação"
+    "Projet"
+    "Tit_Proj"
+    "Carrossel_Proj"
+    "Explicação1"
     "Contato"
     "Redes_Sociais"
     "Rodapé";
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(11, auto);
     grid-template-columns: 1fr;
 }
 
@@ -819,6 +822,42 @@ section.Carrossel_Brid {
 
 section.Explicação {
     grid-area: Explicação ;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+section.Tit_Proj {
+    grid-area: Tit_Proj ;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+section.Carrossel_Proj {
+    grid-area: Carrossel_Proj ;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+section.Explicação1 {
+    grid-area: Explicação1 ;
     text-align: justify;
     display: grid;
     flex-wrap: wrap;
@@ -1007,6 +1046,13 @@ section.Explicação {
     width: 100%;
     height: 100%;
 }
+
+-----------------------------------------------------------------------------
+#slide_5, #slide_6, #slide_7, #slide_8 {
+    width: 100%;
+    height: 100%;
+}
+------------------------------------------------------------------------------
 
 .sub_carrossel {
     padding-right: 25px;
