@@ -15,7 +15,6 @@
     "Missão"
     "Visão"
     "Valores"
-    "Serviços"
     "AVCB"
     "CLCB"
     "Proj_Técnico"
@@ -24,7 +23,7 @@
     "Contato"
     "Redes_Sociais"
     "Rodapé";
-    grid-template-rows: repeat(15, auto);
+    grid-template-rows: repeat(14, auto);
     grid-template-columns: 1fr;
 }
 
@@ -197,7 +196,6 @@ section.Valores {
 }
 
 section.Serviços {
-    grid-area: Serviços;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -428,9 +426,10 @@ form textarea {
     box-shadow: -2px 0 5px rgba(0,0,0,0.25);
 }
 
-section.Redes_Sociais article {
+section.Redes_Sociais {
     grid-area: Redes_Sociais;
-    display: grid;
+    display: flex;
+    grid-template-columns: 1fr;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -608,74 +607,6 @@ ul.serv {
     display: block;
     list-style: none;
    }
-
-@media(max-width: 430px){
-    .links-container{
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 10;
-        width: 200px;
-
-        background-color: var(--color-1);
-        box-shadow: -2px 0 5px rgba(0,0,0,0.25);
-        transition: 0.75s ease-out;
-    }
-    header a{
-        box-sizing: border-box;
-        height: auto;
-        width: 100%;
-        padding: 20px 20px;
-        justify-content: flex-start;
-    }
-    
-
-    .open-sidebar-button, .close-sidebar-button{
-        padding: 20px;
-        display: block; 
-    }
-    #sidebar-active:checked ~ .links-container{
-        right:0;
-    }
-    #sidebar-active:checked ~ #overlay{
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9;
-    }
-
-    .menu__item {
-        color:#F32F2F;
-        display: inline-block;
-        width: 200px;
-        height:auto;
-        position: relative;
-       }
-    
-    .submenu {
-        position: absolute;
-        display: none;
-        height: auto;
-        width: 200px;
-        background-color: black;
-       }
-    
-    .com-submenu:hover .submenu {
-        display: block;
-        list-style: none;
-       }
-
-       ul.serv {
-        display: flex;
-        height: auto;
-    }
-
-}
 
 #grid_AVCB {
     display: grid;
@@ -897,8 +828,6 @@ section.Explicação {
     padding: 30px;
 }
 
-----------------------------------------------------------------------------------------------------
-
 *,
 *::before,
 *::after {
@@ -916,7 +845,7 @@ section.Explicação {
   margin-inline: auto;
   position: relative;
   height: 166px;
-  padding: 20px;
+  padding: 0px;
   overflow: hidden;
   mask-image: linear-gradient(
     to right,
@@ -1010,11 +939,6 @@ section.Explicação {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
 
-
-
-
-
-
 .lista_numerada {
     list-style: decimal;
 }
@@ -1106,3 +1030,348 @@ h1.h1_bold {
 .slider_nav a:hover {
     opacity: 1;
 }
+
+@media(max-width: 430px){
+    .links-container{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 200px;
+
+        background-color: var(--color-1);
+        box-shadow: -2px 0 5px rgba(0,0,0,0.25);
+        transition: 0.75s ease-out;
+    }
+    header a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 20px;
+        justify-content: flex-start;
+    }
+    
+
+    .open-sidebar-button, .close-sidebar-button{
+        padding: 20px;
+        display: block; 
+    }
+    #sidebar-active:checked ~ .links-container{
+        right:0;
+    }
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .menu__item {
+        color:#F32F2F;
+        display: inline-block;
+        width: 200px;
+        height:auto;
+        position: relative;
+       }
+    
+    .submenu {
+        position: absolute;
+        display: none;
+        height: auto;
+        width: 200px;
+        background-color: black;
+       }
+    
+    .com-submenu:hover .submenu {
+        display: block;
+        list-style: none;
+       }
+
+       ul.serv {
+        display: flex;
+        height: auto;
+    }
+
+}
+
+@media(min-width: 1280px) {
+
+}
+
+@media(min-width: 1024px) {
+    #grid {
+        display: grid;
+        grid-template-areas:
+        "Cabeçalho Cabeçalho Cabeçalho Cabeçalho "
+        "Banner Banner Banner Banner"
+        "Sobre Sobre Sobre Sobre"
+        "vvm vvm vvm vvm"
+        "Serviços Serviços Serviços Serviços"
+        "AVCB CLCB Proj_Técnico Consultoria"
+        "Carrossel Carrossel Carrossel Carrossel"
+        "Contato Contato Redes_Sociais ."
+        "Rodapé Rodapé Rodapé Rodapé";
+        grid-template-rows: repeat(8, auto);
+        grid-template-columns: 4fr;
+    }
+
+    div.Cabeçalho {
+        grid-area: Cabeçalho;
+        display: grid;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+
+    }
+
+    .vvm {
+        grid-area: vvm;
+        display: grid;
+    }
+
+    
+        #teste_mvv {
+            display: flex;
+            grid-template-areas: 
+            "Missão"
+            "Visão"
+            "Valores";
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: auto;
+        }
+
+
+
+        section.Missão {
+            grid-area: Missão;
+            text-align: center;
+            display: grid;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            background-color: #000;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-bottom: 20px;
+            color: #fff;
+            font-size: 18px;
+        }
+        
+        section.Visão  {
+            grid-area: Visão;
+            text-align: center;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            color: #fff;
+            font-size: 18px;
+        }
+        
+        section.Valores {
+            grid-area: Valores;
+            text-align: center;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            color: #fff;
+            font-size: 18px;
+        }
+        
+
+    nav.Banner {
+        grid-area: Banner;
+        place-items: center;
+        width: auto;
+        height: auto;
+    }
+    
+    section.Sobre {
+        grid-area: Sobre;
+        text-align: center;
+        display: grid;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    section.Serviços {
+        grid-area: Serviços;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+    }
+    
+    section.AVCB {
+        grid-area: AVCB;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;    
+        width: auto;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .AVCB {
+        width: 100%;
+        height: 100%;
+    }
+    
+    section.CLCB {
+        grid-area: CLCB;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .CLCB {
+        width: 100%;
+        height: 100%;
+    }
+    
+    section.Proj_Técnico {
+        grid-area: Proj_Técnico;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .Proj_Técnico {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img_serviços {
+        width: auto;
+        height: auto;
+    }
+    
+    section.Consultoria {
+        grid-area: Consultoria;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .Consultoria {
+        width: 100%;
+        height: 100%;
+    }
+
+    section.Carrossel {
+        grid-area: Carrossel;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin-top: 25px;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    section.Contato {
+        grid-area: Contato;
+        margin: 25px;
+    }
+
+    section.Redes_Sociais {
+        grid-area: Redes_Sociais;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 25px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding-top:55px ;
+        padding-left: 35px;
+    }
+
+    footer.Rodapé {
+        grid-area: Rodapé;
+        display: grid;
+        grid-template-rows: repeat(2 auto);
+        background-color: black;
+        padding: 25px;
+    }
+
+    .aside_rs {
+        display: flex;
+        justify-content: center;
+        position:relative;
+        width: auto;
+        height: auto;
+        border-right: 15px;
+        color:white;
+        font-size: 16px;    
+        padding: 12px 24px;
+        border:none;
+        cursor:pointer;
+        border-radius:5px;
+        }
+
+    .wrapper {
+        display: flex;
+        width: auto;
+        max-width: 1980px;
+        margin-inline: auto;
+        position: relative;
+        height: 166px;
+        overflow: hidden;
+        mask-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1) 20%,
+          rgba(0, 0, 0, 1) 80%,
+          rgba(0, 0, 0, 0)
+        );
+      }
+
+}
+
