@@ -640,7 +640,7 @@ nav.Banner_AVCB {
     background-image: url(Imagens/Group_13.png);
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 185px;
+    max-height: 250px;
     color: #fff;
     padding: 30px;
 }
@@ -695,7 +695,7 @@ nav.Banner_CLCB {
     background-image: url(Imagens/Group_14.png);
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 185px;
+    max-height: 250px;
     color: #fff;
     padding: 30px;
 }
@@ -733,7 +733,7 @@ nav.Banner_Proj_Tec {
     background-image: url(Imagens/Group_11.png);
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 185px;
+    max-height: 250px;
     color: #fff;
     padding: 30px;
 }
@@ -771,7 +771,7 @@ nav.Banner_Consultoria {
     background-image: url(Imagens/Group_15.png);
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 185px;
+    max-height: 250px;
     color: #fff;
     padding: 30px;
 }
@@ -784,7 +784,6 @@ nav.Banner_Consultoria {
     "Tit_Brid"
     "Carrossel_Brid"
     "Explicação"
-    "Projet"
     "Tit_Proj"
     "Carrossel_Proj"
     "Explicação1"
@@ -1042,17 +1041,12 @@ section.Explicação1 {
     transition: opacity ease 250ms;
 }
 
-#slide_1, #slide_2, #slide_3, #slide_4 {
+#slide_1, #slide_2, #slide_3, #slide_4, #slide_5, #slide_6, #slide_7, #slide_8 {
     width: 100%;
     height: 100%;
 }
 
------------------------------------------------------------------------------
-#slide_5, #slide_6, #slide_7, #slide_8 {
-    width: 100%;
-    height: 100%;
-}
-------------------------------------------------------------------------------
+
 
 .sub_carrossel {
     padding-right: 25px;
@@ -1314,7 +1308,6 @@ h1.h1_bold {
     
     section.Proj_Técnico {
         grid-area: Proj_Técnico;
-        display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
