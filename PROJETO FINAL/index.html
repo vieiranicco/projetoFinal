@@ -13,9 +13,9 @@
 <body>
     <div id="grid">
         <div class="Cabeçalho">
-            <header class="Logo_home">
+            <nav class="Logo_home">
                 <a class="logo_home" href="index.html"> <img alt="Logo Nicollas Vieira Incêndios" class="img_logo" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\logohome.png"> </a>
-            </header>
+            </nav>
             <header class="Menus"> 
                     <input type="checkbox" id="sidebar-active">
                     <label for="sidebar-active" class="open-sidebar-button">
@@ -28,51 +28,52 @@
                             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>    
                         </label>
             
-                        <a href="#">Sobre</a>
+                        <a class="menu_sanduiche" href="#red_sobre">Sobre</a>
             
                     <ul class="serv">
                         <li class="menu__item com-submenu"> 
-                            <a href="#"> Serviços</a>
+                            <a class="menu_sanduiche"> Serviços</a>
                             <ul class="submenu">
                                 <li>
-                                   <a href="#">AVCB</a>
+                                   <a class="menu_sanduiche" href="AVCB.html">AVCB</a>
                                 </li>
                                 <li>
-                                   <a href="#">CLCB</a>
+                                   <a class="menu_sanduiche" href="CLCB.html">CLCB</a>
                                 </li>
                                 <li>
-                                   <a href="#">Projeto Técnico</a>
+                                   <a class="menu_sanduiche" href="Proj.Tec.html">Projeto Técnico</a>
                                 </li>
                                 <li>
-                                   <a href="#">Consultoria</a>
+                                   <a class="menu_sanduiche" href="Consultoria.html">Consultoria</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>    
-                        <a href="#">Projetos</a>
-                        <a href="#">Contato</a>
+                        <a class="menu_sanduiche" href="Projetos.html">Projetos</a>
+                        <a class="menu_sanduiche" href="#grade">Contato</a>
                     </div>
             </header>
         </div>
-        <nav class="Banner"> <img class="img_banner" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\bannersite.png"> </nav>
+        <nav class="Banner"> <img class="img_banner" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\banner.svg"> </nav>
 
-        <section class="Sobre">
+        <section id=red_sobre class="Sobre">
             <article>
-                <h2 class="titulo"> Sobre </h2>
-                <p>  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                <h2 class="titulo3"> Sobre </h2>
+                <p class="padding">  Atuo na área de proteção contra incêndios desde 2023, trazendo uma abordagem especializada para garantir a segurança e a conformidade das edificações. Com conhecimento das normas vigentes 
+                    e um compromisso com a proteção de vidas e patrimônios, desenvolvo soluções personalizadas que atendem às necessidades específicas de cada projeto, sempre buscando a excelência em cada detalhe.</p>
+                <br>
+                    <h3 class="titulo3"> Excelência em obtenção de AVCB </h3>
+                <p class="padding">  Ofereço serviços especializados em proteção contra incêndios, desde a elaboração de projetos técnicos e simplificados, consultoria e avaliação de riscos, até o acompanhamento e supervisão da 
+                    implementação das medidas de segurança. Atendo desde pequenas até grandes edificações, sempre com soluções personalizadas que garantem a conformidade com as normas vigentes e a máxima segurança dos ocupantes e patrimônios.
                 </p>
-                <h3 class="titulo"> Excelência em obtenção de AVCB </h3>
-                <p>  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                     ipsum lorem ipsum
-                </p>
+                <br>
             </article>
         </section>
 
         <section class="Missão">
             <article>
-                <img class="img_mvv" alt="Dois bonecos sticker alcançando o topo metaforicamente" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\leadership.png">
                 <h2 class="titulo"> Missão </h2>
-                <p>  É garantir a segurança e proteção de vidas e patrimônios através de soluções arquitetônicas contra incêndios, oferecendo
+                <p class="padding">  É garantir a segurança e proteção de vidas e patrimônios através de soluções arquitetônicas contra incêndios, oferecendo
                     projetos personalizados que atendem às normas e promovem a tranquilidade dos clientes. </p>
             </article>
         </section>
@@ -80,7 +81,7 @@
         <section class="Visão">
             <article > 
                 <h2 class="titulo"> Visão </h2>
-                <p> Ser reconhecido como a principal referência em arquitetura de proteção contra incêndios, redefinindo os padrões de segurança
+                <p class="padding"> Ser reconhecido como a principal referência em arquitetura de proteção contra incêndios, redefinindo os padrões de segurança
                     e liderando o mercado com excelência em serviços e comprometimento com a segurança. </p>
             </article>
         </section>
@@ -88,7 +89,7 @@
         <section  class="Valores">
             <article>
                 <h2 class="titulo"> Valores </h2>
-                <p> Valorizo a segurança, excelência, qualidade, ética, transparência, colaboração e respeito, assegurando a integridade
+                <p class="padding"> Valorizo a segurança, excelência, qualidade, ética, transparência, colaboração e respeito, assegurando a integridade
                     e a mais alta qualidade nos projetos personalizados, sempre com foco na proteção de vidas e patrimônios. </p>
             </article>
         </section>
@@ -100,28 +101,28 @@
         <section class="AVCB">
             <article Class="AVCB">
                 <img class="img_serviços" alt="Caixa de hidrante e extintor" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\avcb.png">
-                <a class="box_botão" href=""> <button class="botão_serviços"> AVCB </button> </a>
+                <a class="box_botão" href="AVCB.html"> <button class="botão_serviços"> AVCB </button> </a>
             </article>
         </section>
 
         <section class="CLCB">
             <article class="CLCB"> 
                 <img class="img_serviços" alt="Extintor fixado na parede" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\clcb.png">
-                <a class="box_botão" href=""> <button class="botão_serviços"> CLCB</button> </a>
+                <a class="box_botão" href="CLCB.html"> <button class="botão_serviços"> CLCB</button> </a>
             </article>
         </section>
 
         <section class="Proj_Técnico">
             <article class="Proj_Técnico">
                 <img class="img_serviços" alt="Caixa de Hidrante com jaqueta amarela" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\pt.png">
-                <a class="box_botão" href=""> <button class="botão_serviços"> Proj. Técnico </button> </a>
+                <a class="box_botão" href="Proj.Tec.html"> <button class="botão_serviços"> Proj. Técnico </button> </a>
             </article>
         </section>
             
         <section class="Consultoria">
             <article class="Consultoria">
                 <img class="img_serviços" alt="Botoeira de acionamento de Incêndio" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\ps.png">
-                <a class="box_botão" href=""> <button class="botão_serviços"> Consultoria </button> </a>
+                <a class="box_botão" href="Consultoria.html"> <button class="botão_serviços"> Consultoria </button> </a>
             </article>
         </section>
 
@@ -129,28 +130,28 @@
             <h2 class="titulo"> Projetos </h2>
             <div class="wrapper">
                 <div class="item item1">
-                    <a href="#">  <img src="bemMais.jpg"> </a>
+                    <a href="#">  <img src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\transparente-1-1024x512 1.png"> </a>
                 </div>
                 <div class="item item2">
-                    <a href="#">  <img src="bridgestone.jpg"> </a>
+                    <a href="#">  <img src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\cf03c7_e2aeb6a863bd4b659ef5e4f8d11f1b56~mv2 1.png"> </a>
                 </div>
                 <div class="item item3">
-                    <a href="#">  <img src="grupoSbf.png"> </a>
+                    <a href="Projetos.html#Bridgestone">  <img src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\bridgestone-logo-9EED0B306E-seeklogo.com 1.png"> </a>
                 </div>
                 <div class="item item4">
-                    <a href="#">  <img src="starex.png"> </a>
+                    <a href="#">  <img src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\starex.png"> </a>
                 </div>
                 <div class="item item5">
-                    <a href="#">  <img src="bemMais.jpg"> </a>
+                    <a href="#">  <img src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\transparente-1-1024x512 1.png"> </a>
                 </div>
                 <div class="item item6">
-                    <a href="#">  <img src="bridgestone.jpg"> </a>
+                    <a href="#">  <img src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\cf03c7_e2aeb6a863bd4b659ef5e4f8d11f1b56~mv2 1.png"> </a>
                 </div>
                 <div class="item item7">
-                   <a href="#">  <img src="grupoSbf.png"> </a>
+                   <a href="Projetos.html#Bridgestone">  <img src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\bridgestone-logo-9EED0B306E-seeklogo.com 1.png"> </a>
                 </div>
                 <div class="item item8">
-                    <img src="starex.png">
+                    <a href="#"> <img class="efeito" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\starex.png"> </a>
                 </div>
             </div>
         </section>
@@ -187,19 +188,19 @@
             <article class="Redes_Sociais"> 
                 <ul class="aside_rs">
                     <li class="aside_zap">
-                        <a href="https://wa.me/+5511959159515"> <img class="logo_zap" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\zap.png"/> </a>
+                        <a href="https://wa.me/+5511959159515"> <img class="logo_zap" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\whatsapp-svgrepo-com.svg"/> </a>
                     </li>
                     <li class="aside_insta">
-                        <a href="https://www.instagram.com/vieiranicco/"> <img class="logo_zap" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\insta copy.png" width="50" height="50"/> </a>
+                        <a href="https://www.instagram.com/vieiranicco/"> <img class="logo_zap" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\instagram-svgrepo-com.svg"/> </a>
                     </li>
                     <li class="aside_linkedin">
-                        <a href="https://www.linkedin.com/in/nicollas-guimaraes-vieira/"> <img class="logo_zap" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\linkedIn copy.png" width="50" height="50"/> </a>
+                        <a href="https://www.linkedin.com/in/nicollas-guimaraes-vieira/"> <img class="logo_zap" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\linkedin-svgrepo-com.svg"/> </a>
                     </li>
                 </ul>
             </article>
         </section>
         <footer class="Rodapé">
-            <a class="item_rodapé" href=""> <img class="logo_footer" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\logofooter.png"> </a>
+            <a class="item_rodapé" href="#grid"> <img class="logo_footer" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\logofooter.png"> </a>
             <p class="texto_rodapé">
                 Arq. Responsável: Nicollas Guimarães Vieira
                 <br>

@@ -7,14 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title> Proj. Técnico </title>
+    <title> Projeto Técnico </title>
 </head>
+
 <body>
     <div id="grid_Proj_Tec">
         <div class="Cabeçalho">
-            <header class="Logo_home">
+            <nav class="Logo_home">
                 <a class="logo_home" href="index.html"> <img alt="Logo Nicollas Vieira Incêndios" class="img_logo" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\logohome.png"> </a>
-            </header>
+            </nav>
             <header class="Menus"> 
                     <input type="checkbox" id="sidebar-active">
                     <label for="sidebar-active" class="open-sidebar-button">
@@ -27,38 +28,39 @@
                             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>    
                         </label>
             
-                        <a href="#">Sobre</a>
+                        <a class="menu_sanduiche" href="#">Sobre</a>
             
                     <ul class="serv">
                         <li class="menu__item com-submenu"> 
-                            <a href="#"> Serviços</a>
+                            <a class="menu_sanduiche" href="#red_sobre"> Serviços</a>
                             <ul class="submenu">
                                 <li>
-                                   <a href="#">AVCB</a>
+                                   <a class="menu_sanduiche" href="#">AVCB</a>
                                 </li>
                                 <li>
-                                   <a href="#">CLCB</a>
+                                   <a class="menu_sanduiche" href="#">CLCB</a>
                                 </li>
                                 <li>
-                                   <a href="#">Projeto Técnico</a>
+                                   <a class="menu_sanduiche" href="#">Projeto Técnico</a>
                                 </li>
                                 <li>
-                                   <a href="#">Consultoria</a>
+                                   <a class="menu_sanduiche" href="#">Consultoria</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>    
-                        <a href="#">Projetos</a>
-                        <a href="#">Contato</a>
+                        <a class="menu_sanduiche" href="#">Projetos</a>
+                        <a class="menu_sanduiche" href="#">Contato</a>
                     </div>
             </header>
         </div>
-        <nav class="Banner"> <img class="img_banner" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\bannersite.png"> </nav>
-        
-        <section class="Serv_Proj_Tec">
-            <h2 class="titles_mvv"> Projeto Técnico </h2>
+        <nav class="Banner_Proj_Tec"> 
+            <h2 class="titles_mvv titulo_2"> Projeto Técnico </h2>
             <p>O Projeto Técnico do Corpo de Bombeiros é um documento detalhado que descreve todas as medidas de segurança contra incêndio a serem implementadas em uma edificação, conforme as normas e regulamentações vigentes.
               Este projeto é elaborado por um profissional habilitado e deve ser aprovado pelo Corpo de Bombeiros antes da construção, reforma ou regularização do imóvel.</p>
+        </nav>
+        
+        <section class="Serv_Proj_Tec">
               <article>
                 <h3 class="titles_subtitulo"> Importância do Projeto Técnico</h3>
                 <ul class="lista_numerada"> 
@@ -128,19 +130,19 @@
             <article class="Redes_Sociais"> 
                 <ul class="aside_rs">
                     <li class="aside_zap">
-                        <a href="https://wa.me/+5511959159515"> <img class="logo_zap" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\zap.png"/> </a>
+                        <a href="https://wa.me/+5511959159515"> <img class="logo_zap" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\whatsapp-svgrepo-com.svg"/> </a>
                     </li>
                     <li class="aside_insta">
-                        <a href="https://www.instagram.com/vieiranicco/"> <img class="logo_zap" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\insta copy.png" width="50" height="50"/> </a>
+                        <a href="https://www.instagram.com/vieiranicco/"> <img class="logo_zap" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\instagram-svgrepo-com.svg"/> </a>
                     </li>
                     <li class="aside_linkedin">
-                        <a href="https://www.linkedin.com/in/nicollas-guimaraes-vieira/"> <img class="logo_zap" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\linkedIn copy.png" width="50" height="50"/> </a>
+                        <a href="https://www.linkedin.com/in/nicollas-guimaraes-vieira/"> <img class="logo_zap" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\linkedin-svgrepo-com.svg"/> </a>
                     </li>
                 </ul>
             </article>
         </section>
         <footer class="Rodapé">
-            <a class="item_rodapé" href=""> <img class="logo_footer" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\logofooter.png"> </a>
+            <a class="item_rodapé" href="index.html"> <img class="logo_footer" src="C:\Users\Nicol\OneDrive\Área de Trabalho\CODERHOUSE - HTML E CSS\projetoFinal\PROJETO FINAL\Imagens\logofooter.png"> </a>
             <p class="texto_rodapé">
                 Arq. Responsável: Nicollas Guimarães Vieira
                 <br>

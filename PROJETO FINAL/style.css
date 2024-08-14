@@ -1,8 +1,5 @@
 *{
-    font-family:"Darker Grotesque", sans-serif;
-    font-optical-sizing:auto;
-    font-weight: 16px;
-    font-style:normal;
+    font-family:"Darker Grotesque";
     margin:0;
     padding:0;
     border:0;
@@ -41,23 +38,31 @@ div.Cabeçalho {
     grid-template-rows: auto;
     padding: 0;
     margin: 0;
+    height: auto;
+    min-height: 60px;
 }
 
-header.Logo_home {
+nav.Logo_home {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
+    align-items: flex;
+    justify-content: flex-start;
     width: auto;
     height: auto;
     padding: 10px;
+    background-color: #000;
+
 }
 
 .logo_home .img_logo {
     width: 100%;
     height: 100%;
+    min-height: 52px;
+    min-width: 220px;
+    max-width: 366px;
+    max-height: 65px;
 }
+
 
 header.Menus {
     display: flex;
@@ -79,7 +84,7 @@ nav.Banner {
 .img_banner {
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 section.Sobre {
@@ -95,7 +100,21 @@ section.Sobre {
 
 h2.titulo {
     justify-content: center;
-    display: flex;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    text-decoration: solid;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 8px;
+}
+
+.titulo3 {
+    justify-content: center;
+    position: sticky;
+    top: 0;
     text-align: center;
     text-decoration: solid;
     color: red;
@@ -103,6 +122,7 @@ h2.titulo {
     margin-bottom: 0;
     margin-top: 0;
 }
+
 
 p.texto {
     display: inline-flex;
@@ -120,7 +140,13 @@ section.Missão {
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin: 10px;
+    background-color: #000;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 10px;
+    color: #fff;
 }
 
 section.Visão  {
@@ -130,7 +156,12 @@ section.Visão  {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    background-color: #000;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
 }
 
 section.Valores {
@@ -140,7 +171,21 @@ section.Valores {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    background-color: #000;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.padding {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    text-align: justify;
 }
 
 .img_mvv {
@@ -245,24 +290,24 @@ button.botão_serviços {
     font-family: "Darker Grotesque";
     font-size: 24px;
     font-weight: bold;
-    box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+    box-shadow: -2px 0 5px rgba(0,0,0,0.25);
 }
 
 .img_serviços {
     border-radius: 5%;
     border-color: black;
-    box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+    box-shadow: -2px 0 5px rgba(0,0,0,0.25);
 }
 
 section.Carrossel {
     grid-area: Carrossel;
-    display: grid;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: auto;
     height: auto;
-    margin: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .img_carrossel {
@@ -271,7 +316,7 @@ section.Carrossel {
     margin: 5px;
     width: auto;
     height: auto;
-    box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+    box-shadow: -2px 0 5px rgba(0,0,0,0.25);
 }
 
 section.Contato {
@@ -352,7 +397,7 @@ div.Form_Botão {
     font-family: "Darker Grotesque";
     font-weight: bold;
     font-size: 24px;
-    box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+    box-shadow: -2px 0 5px rgba(0,0,0,0.25);
 }
 
 form input {
@@ -366,7 +411,7 @@ form input {
     font-family: "Darker Grotesque";
     font-size: 16px;
     padding-left: 8px;
-    box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+    box-shadow: -2px 0 5px rgba(0,0,0,0.25);
 }
 
 form textarea {
@@ -380,7 +425,7 @@ form textarea {
     font-family: "Darker Grotesque";
     font-size: 16px;
     padding-left: 8px;
-    box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+    box-shadow: -2px 0 5px rgba(0,0,0,0.25);
 }
 
 section.Redes_Sociais article {
@@ -428,12 +473,16 @@ height: auto;
 display: inline-block;
 position: relative;
 margin-right:15px;
+height: auto;   
+width: auto;
 }
 
 .aside_linkedin {
 display: inline-block;
 position: relative;
 margin-right:15px;
+height: auto;   
+width: auto;
 }
 
 h2.fale_conosco {
@@ -514,8 +563,7 @@ header a{
     text-decoration: none;
     color: var(--text-color);
 }
-
-header a:hover{
+.menu_sanduiche:hover{
     background-color: var(--accent-color);
     color: #fff;
 }
@@ -573,7 +621,7 @@ ul.serv {
         width: 200px;
 
         background-color: var(--color-1);
-        box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+        box-shadow: -2px 0 5px rgba(0,0,0,0.25);
         transition: 0.75s ease-out;
     }
     header a{
@@ -633,7 +681,7 @@ ul.serv {
     display: grid;
     grid-template-areas:
     "Cabeçalho"
-    "Banner"
+    "Banner_AVCB"
     "Serv_AVCB"
     "Contato"
     "Redes_Sociais"
@@ -642,7 +690,7 @@ ul.serv {
     grid-template-columns: 1fr;
 }
 
-section.Serv_AVCB, section.Serv_CLCB {
+section.Serv_AVCB {
     grid-area: Serv_AVCB;
     text-align: justify;
     display: grid;
@@ -650,9 +698,34 @@ section.Serv_AVCB, section.Serv_CLCB {
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin: 10px;
-    padding: 20px;
+    padding: 30px;
 }
+
+nav.Banner_AVCB {
+    grid-area: Banner_AVCB;
+    text-align: justify;
+    place-items: center;
+    width: auto;
+    height: auto;
+    background-image: url(Imagens/Group_13.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 185px;
+    color: #fff;
+    padding: 30px;
+}
+
+h2.titulo_2 {
+    text-align: justify;
+    position: sticky;
+    top: 0;
+    text-decoration: solid;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 
 li.lista {
     list-style-type: decimal;
@@ -663,7 +736,7 @@ li.lista {
     display: grid;
     grid-template-areas:
     "Cabeçalho"
-    "Banner"
+    "Banner_CLCB"
     "Serv_CLCB"
     "Contato"
     "Redes_Sociais"
@@ -680,15 +753,28 @@ section.Serv_CLCB {
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin: 10px;
-    padding: 20px;
+    padding: 30px;
+}
+
+nav.Banner_CLCB {
+    grid-area: Banner_CLCB;
+    text-align: justify;
+    place-items: center;
+    width: auto;
+    height: auto;
+    background-image: url(Imagens/Group_14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 185px;
+    color: #fff;
+    padding: 30px;
 }
 
 #grid_Proj_Tec {
     display: grid;
     grid-template-areas:
     "Cabeçalho"
-    "Banner"
+    "Banner_Proj_Tec"
     "Serv_Proj_Tec"
     "Contato"
     "Redes_Sociais"
@@ -705,15 +791,28 @@ section.Serv_Proj_Tec {
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin: 10px;
-    padding: 20px;
+    padding: 30px;
+}
+
+nav.Banner_Proj_Tec {
+    grid-area: Banner_Proj_Tec;
+    text-align: justify;
+    place-items: center;
+    width: auto;
+    height: auto;
+    background-image: url(Imagens/Group_11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 185px;
+    color: #fff;
+    padding: 30px;
 }
 
 #grid_Consultoria {
     display: grid;
     grid-template-areas:
     "Cabeçalho"
-    "Banner"
+    "Banner_Consultoria"
     "Serv_Consultoria"
     "Contato"
     "Redes_Sociais"
@@ -730,8 +829,72 @@ section.Serv_Consultoria {
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin: 10px;
-    padding: 20px;
+    padding: 30px;
+}
+
+nav.Banner_Consultoria {
+    grid-area: Banner_Consultoria;
+    text-align: justify;
+    place-items: center;
+    width: auto;
+    height: auto;
+    background-image: url(Imagens/Group_15.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 185px;
+    color: #fff;
+    padding: 30px;
+}
+
+#grid_Projetos {
+    display: grid;
+    grid-template-areas:
+    "Cabeçalho"
+    "Banner"
+    "Tit_Brid"
+    "Carrossel_Brid"
+    "Explicação"
+    "Contato"
+    "Redes_Sociais"
+    "Rodapé";
+    grid-template-rows: repeat(8, auto);
+    grid-template-columns: 1fr;
+}
+
+section.Tit_Brid {
+    grid-area: Tit_Brid ;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+section.Carrossel_Brid {
+    grid-area: Carrossel_Brid ;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+section.Explicação {
+    grid-area: Explicação ;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
 }
 
 ----------------------------------------------------------------------------------------------------
@@ -747,12 +910,13 @@ section.Serv_Consultoria {
 }
 
 .wrapper {
-  width: 90%;
+  display: flex;
+  width: auto;
   max-width: 1536px;
   margin-inline: auto;
   position: relative;
   height: 166px;
-  margin-top: 5rem;
+  padding: 20px;
   overflow: hidden;
   mask-image: linear-gradient(
     to right,
@@ -770,6 +934,7 @@ section.Serv_Consultoria {
 }
 
 .item {
+    display: flex;
   width: 327px;
   height: 166px;
   border-radius: 6px;
@@ -779,6 +944,38 @@ section.Serv_Consultoria {
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+
+.item1:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item2:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item3:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item4:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item5:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item6:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item7:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item8:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
 }
 
 .item1 {
@@ -811,4 +1008,101 @@ section.Serv_Consultoria {
 
 .item8 {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+
+
+
+
+
+.lista_numerada {
+    list-style: decimal;
+}
+.lista {
+    margin-bottom:5px;
+}
+
+.titles_subtitulo {
+    color:black;
+    text-decoration:none;
+}
+
+.brid_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container { 
+    padding: 2rem;
+}
+
+.slider_wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25) ;
+    border-radius: 0.5rem;
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+
+}
+
+.slider_nav {
+    display: flex;
+    column-gap: 1rem;   
+    position:absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider_nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #F32F2F;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+#slide_1, #slide_2, #slide_3, #slide_4 {
+    width: 100%;
+    height: 100%;
+}
+
+.sub_carrossel {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+h1.h1_bold {
+    font-size: 36px;
+    font-weight: bold;
+    color: #F32F2F;
+    text-align: justify;
+    padding-left: 30px;
+}
+
+.titulo4 {
+    padding-left:30px;
+    color: #000;
+    text-align: start;
+}
+
+.slider_nav a:hover {
+    opacity: 1;
 }
