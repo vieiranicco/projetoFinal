@@ -1,2 +1,0 @@
-# projetoFinal
-Projeto final - CODERHOUSE
