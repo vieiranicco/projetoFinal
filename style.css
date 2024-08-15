@@ -637,7 +637,7 @@ nav.Banner_AVCB {
     place-items: center;
     width: auto;
     height: auto;
-    background-image: url(PROJETO_FINAL\Imagens\Group_13.png);
+    background-image: url(../projetoFinal/PROJETO_FINAL/Imagens/Group_13.png);
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 250px;
@@ -692,7 +692,7 @@ nav.Banner_CLCB {
     place-items: center;
     width: auto;
     height: auto;
-    background-image: url(PROJETO_FINAL\Imagens\Group_14.png);
+    background-image: url(../projetoFinal/PROJETO_FINAL/Imagens/Group_14.png);
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 250px;
@@ -730,7 +730,7 @@ nav.Banner_Proj_Tec {
     place-items: center;
     width: auto;
     height: auto;
-    background-image: url(PROJETO_FINAL\Imagens\Group_11.png);
+    background-image: url("../projetoFinal/PROJETO_FINAL/Imagens/Group_11.png");
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 250px;
@@ -768,7 +768,7 @@ nav.Banner_Consultoria {
     place-items: center;
     width: auto;
     height: auto;
-    background-image: url(PROJETO_FINAL\Imagens\Group_15.png);
+    background-image: url("../projetoFinal/PROJETO_FINAL/Imagens/Group_15.png");
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 250px;
