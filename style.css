@@ -1,0 +1,1416 @@
+*{
+    font-family:"Darker Grotesque";
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+#grid {
+    display: grid;
+    grid-template-areas:
+    "Cabeçalho"
+    "Banner"
+    "Sobre"
+    "Missão"
+    "Visão"
+    "Valores"
+    "AVCB"
+    "CLCB"
+    "Proj_Técnico"
+    "Consultoria"
+    "Carrossel"
+    "Contato"
+    "Redes_Sociais"
+    "Rodapé";
+    grid-template-rows: repeat(14, auto);
+    grid-template-columns: 1fr;
+}
+
+div.Cabeçalho {
+    grid-area: Cabeçalho;
+    display: grid;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    min-height: 60px;
+}
+
+nav.Logo_home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: #000;
+
+}
+
+.logo_home .img_logo {
+    width: 100%;
+    height: 100%;
+    min-height: 52px;
+    min-width: 220px;
+    max-width: 366px;
+    max-height: 65px;
+}
+
+
+header.Menus {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: black;
+    width: auto;
+    height: auto;
+}
+
+nav.Banner {
+    grid-area: Banner;
+    place-items: center;
+    width: auto;
+    height: auto;
+}
+
+.img_banner {
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+section.Sobre {
+    grid-area: Sobre;
+    text-align: center;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+h2.titulo {
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    text-decoration: solid;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 8px;
+}
+
+.titulo3 {
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    text-decoration: solid;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+p.texto {
+    display: inline-flex;
+    text-align: center;
+    text-decoration: solid;
+    color: black;
+    font-weight: bold;
+}
+
+section.Missão {
+    grid-area: Missão;
+    text-align: center;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #000;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+section.Visão  {
+    grid-area: Visão;
+    text-align: center;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+section.Valores {
+    grid-area: Valores;
+    text-align: center;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.padding {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    text-align: justify;
+}
+
+.img_mvv {
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 40%;
+    height: 40%;
+}
+
+section.Serviços {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+section.AVCB article.AVCB {
+    grid-area: AVCB;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;    
+    width: auto;
+    height: auto;
+    margin: 25px;
+}
+
+.AVCB {
+    width: 100%;
+    height: 100%;
+}
+
+section.CLCB article.CLCB {
+    grid-area: CLCB;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 25px;
+}
+
+.CLCB {
+    width: 100%;
+    height: 100%;
+}
+
+section article a.box_botão {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-block-start: 300px;
+}
+
+section.Proj_Técnico article.Proj_Técnico {
+    grid-area: Proj_Técnico;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 25px;
+}
+
+.Proj_Técnico {
+    width: 100%;
+    height: 100%;
+}
+
+section.Consultoria article {
+    grid-area: Consultoria;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 25px;
+}
+
+.Consultoria {
+    width: 100%;
+    height: 100%;
+}
+
+button.botão_serviços {
+    justify-content: center;
+    align-items: center;
+    background-color: #F32F2F;
+    color:white;
+    font-size: 16px;  
+    padding: 12px 24px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+    font-family: "Darker Grotesque";
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.25);
+}
+
+.img_serviços {
+    border-radius: 5%;
+    border-color: black;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.25);
+}
+
+section.Carrossel {
+    grid-area: Carrossel;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.img_carrossel {
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: auto;
+    height: auto;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.25);
+}
+
+section.Contato {
+    grid-area: Contato;
+    margin: 25px;
+}
+
+#grade {
+    display: grid;
+    grid-template-areas: 
+    "Form_Email" 
+    "Form_NomeSobrenome"
+    "Form_CelTelefone"
+    "Form_Assunto"
+    "Form_Mensagem"
+    "Form_Botão";
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+}
+
+form div.Form_Email {
+    grid-area: Form_Email;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 5px;
+}
+
+div form div.Form_NomeSobrenome {
+    grid-area: Form_NomeSobrenome;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 5px;
+}
+
+form div.Form_CelTelefone {
+    grid-area: Form_CelTelefone;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin: 5px;
+}
+
+form div.Form_Assunto {
+    grid-area: Form_Assunto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 5px;
+}
+
+form div.Form_Mensagem {
+    grid-area: Form_Mensagem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 5px;
+}
+
+div.Form_Botão {
+    grid-area: Form_Botão;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 5px;
+}
+
+.Botão_Form {
+    background-color: #F32F2F;
+    color:white;
+    font-size: 16px;    
+    padding: 12px 24px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+    font-family: "Darker Grotesque";
+    font-weight: bold;
+    font-size: 24px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.25);
+}
+
+form input {
+    display: flex;
+    outline: unset;
+    padding: 8px;  
+    width: auto;
+    height: 30px;
+    border: 1px solid #F32F2F;
+    border-radius:10px;
+    font-family: "Darker Grotesque";
+    font-size: 16px;
+    padding-left: 8px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.25);
+}
+
+form textarea {
+    display: flex;
+    outline: unset;
+    padding: 8px;  
+    width: auto;
+    height: 150px;
+    border: 1px solid #F32F2F;
+    border-radius:10px;
+    font-family: "Darker Grotesque";
+    font-size: 16px;
+    padding-left: 8px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.25);
+}
+
+section.Redes_Sociais {
+    grid-area: Redes_Sociais;
+    display: flex;
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 25px;
+}
+
+.aside_rs {
+display: inline-block;
+justify-content: center;
+position:relative;
+width: auto;
+height: auto;
+border-right: 15px;
+color:white;
+font-size: 16px;    
+padding: 12px 24px;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+.aside_zap {
+display: inline-block;
+position: relative;
+margin-right:15px;
+width: auto;
+height: auto;
+}
+
+.logo_zap {
+align-items: center;
+justify-content: center;
+width: auto;
+height: auto;
+}
+
+.aside_insta {
+display: inline-block;
+position: relative;
+margin-right:15px;
+height: auto;   
+width: auto;
+}
+
+.aside_linkedin {
+display: inline-block;
+position: relative;
+margin-right:15px;
+height: auto;   
+width: auto;
+}
+
+h2.fale_conosco {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    text-decoration: solid;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+footer.Rodapé {
+    grid-area: Rodapé;
+    display: grid;
+    grid-template-rows: repeat(2 auto);
+    background-color: black;
+    padding: 25px;
+}
+
+.item_rodapé {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.logo_footer {
+    width: auto;
+    height: auto;
+}
+
+.texto_rodapé {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 0px;
+}
+
+
+
+:root{
+    --color-1: #000;
+    --text-color: #F32F2F;
+    --accent-color: #a52a2a
+}
+
+
+header{
+    height: 60px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+header a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.menu_sanduiche:hover{
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+
+
+header svg{
+    fill: var(--text-color);
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+
+
+.menu__item {
+    color:#F32F2F;
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    position: relative;
+   }
+
+ul.serv {
+    display: flex;
+    height: 100%;
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+    height: auto;
+    width: 200px;
+    background-color: black;
+   }
+
+.com-submenu:hover .submenu {
+    display: block;
+    list-style: none;
+   }
+
+#grid_AVCB {
+    display: grid;
+    grid-template-areas:
+    "Cabeçalho"
+    "Banner_AVCB"
+    "Serv_AVCB"
+    "Contato"
+    "Redes_Sociais"
+    "Rodapé";
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+}
+
+section.Serv_AVCB {
+    grid-area: Serv_AVCB;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+nav.Banner_AVCB {
+    grid-area: Banner_AVCB;
+    text-align: justify;
+    place-items: center;
+    width: auto;
+    height: auto;
+    background-image: url(Imagens/Group_13.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 250px;
+    color: #fff;
+    padding: 30px;
+}
+
+h2.titulo_2 {
+    text-align: justify;
+    position: sticky;
+    top: 0;
+    text-decoration: solid;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+li.lista {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+#grid_CLCB {
+    display: grid;
+    grid-template-areas:
+    "Cabeçalho"
+    "Banner_CLCB"
+    "Serv_CLCB"
+    "Contato"
+    "Redes_Sociais"
+    "Rodapé";
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+}
+
+section.Serv_CLCB {
+    grid-area: Serv_CLCB;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+nav.Banner_CLCB {
+    grid-area: Banner_CLCB;
+    text-align: justify;
+    place-items: center;
+    width: auto;
+    height: auto;
+    background-image: url(Imagens/Group_14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 250px;
+    color: #fff;
+    padding: 30px;
+}
+
+#grid_Proj_Tec {
+    display: grid;
+    grid-template-areas:
+    "Cabeçalho"
+    "Banner_Proj_Tec"
+    "Serv_Proj_Tec"
+    "Contato"
+    "Redes_Sociais"
+    "Rodapé";
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+}
+
+section.Serv_Proj_Tec {
+    grid-area: Serv_Proj_Tec;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+nav.Banner_Proj_Tec {
+    grid-area: Banner_Proj_Tec;
+    text-align: justify;
+    place-items: center;
+    width: auto;
+    height: auto;
+    background-image: url(Imagens/Group_11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 250px;
+    color: #fff;
+    padding: 30px;
+}
+
+#grid_Consultoria {
+    display: grid;
+    grid-template-areas:
+    "Cabeçalho"
+    "Banner_Consultoria"
+    "Serv_Consultoria"
+    "Contato"
+    "Redes_Sociais"
+    "Rodapé";
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+}
+
+section.Serv_Consultoria {
+    grid-area: Serv_Consultoria;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+nav.Banner_Consultoria {
+    grid-area: Banner_Consultoria;
+    text-align: justify;
+    place-items: center;
+    width: auto;
+    height: auto;
+    background-image: url(Imagens/Group_15.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 250px;
+    color: #fff;
+    padding: 30px;
+}
+
+#grid_Projetos {
+    display: grid;
+    grid-template-areas:
+    "Cabeçalho"
+    "Banner"
+    "Tit_Brid"
+    "Carrossel_Brid"
+    "Explicação"
+    "Tit_Proj"
+    "Carrossel_Proj"
+    "Explicação1"
+    "Contato"
+    "Redes_Sociais"
+    "Rodapé";
+    grid-template-rows: repeat(11, auto);
+    grid-template-columns: 1fr;
+}
+
+section.Tit_Brid {
+    grid-area: Tit_Brid ;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+section.Carrossel_Brid {
+    grid-area: Carrossel_Brid ;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+section.Explicação {
+    grid-area: Explicação ;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+section.Tit_Proj {
+    grid-area: Tit_Proj ;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+section.Carrossel_Proj {
+    grid-area: Carrossel_Proj ;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+section.Explicação1 {
+    grid-area: Explicação1 ;
+    text-align: justify;
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  width: auto;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 166px;
+  padding: 0px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+    display: flex;
+  width: 327px;
+  height: 166px;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(327px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item2:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item3:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item4:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item5:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item6:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item7:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item8:hover  {
+    background-color: rgba(206, 203, 203, 0.568);
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.lista_numerada {
+    list-style: decimal;
+}
+.lista {
+    margin-bottom:5px;
+}
+
+.titles_subtitulo {
+    color:black;
+    text-decoration:none;
+}
+
+.brid_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container { 
+    padding: 2rem;
+}
+
+.slider_wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25) ;
+    border-radius: 0.5rem;
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+
+}
+
+.slider_nav {
+    display: flex;
+    column-gap: 1rem;   
+    position:absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider_nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #F32F2F;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+#slide_1, #slide_2, #slide_3, #slide_4, #slide_5, #slide_6, #slide_7, #slide_8 {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.sub_carrossel {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+h1.h1_bold {
+    font-size: 36px;
+    font-weight: bold;
+    color: #F32F2F;
+    text-align: justify;
+    padding-left: 30px;
+}
+
+.titulo4 {
+    padding-left:30px;
+    color: #000;
+    text-align: start;
+}
+
+.slider_nav a:hover {
+    opacity: 1;
+}
+
+@media(max-width: 430px){
+    .links-container{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 200px;
+
+        background-color: var(--color-1);
+        box-shadow: -2px 0 5px rgba(0,0,0,0.25);
+        transition: 0.75s ease-out;
+    }
+    header a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 20px;
+        justify-content: flex-start;
+    }
+    
+
+    .open-sidebar-button, .close-sidebar-button{
+        padding: 20px;
+        display: block; 
+    }
+    #sidebar-active:checked ~ .links-container{
+        right:0;
+    }
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .menu__item {
+        color:#F32F2F;
+        display: inline-block;
+        width: 200px;
+        height:auto;
+        position: relative;
+       }
+    
+    .submenu {
+        position: absolute;
+        display: none;
+        height: auto;
+        width: 200px;
+        background-color: black;
+       }
+    
+    .com-submenu:hover .submenu {
+        display: block;
+        list-style: none;
+       }
+
+       ul.serv {
+        display: flex;
+        height: auto;
+    }
+
+}
+
+@media(min-width: 1280px) {
+
+}
+
+@media(min-width: 1024px) {
+    #grid {
+        display: grid;
+        grid-template-areas:
+        "Cabeçalho Cabeçalho Cabeçalho Cabeçalho "
+        "Banner Banner Banner Banner"
+        "Sobre Sobre Sobre Sobre"
+        "vvm vvm vvm vvm"
+        "Serviços Serviços Serviços Serviços"
+        "AVCB CLCB Proj_Técnico Consultoria"
+        "Carrossel Carrossel Carrossel Carrossel"
+        "Contato Contato Redes_Sociais ."
+        "Rodapé Rodapé Rodapé Rodapé";
+        grid-template-rows: repeat(8, auto);
+        grid-template-columns: 4fr;
+    }
+
+    div.Cabeçalho {
+        grid-area: Cabeçalho;
+        display: grid;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+
+    }
+
+    .vvm {
+        grid-area: vvm;
+        display: grid;
+    }
+
+    
+        #teste_mvv {
+            display: flex;
+            grid-template-areas: 
+            "Missão"
+            "Visão"
+            "Valores";
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: auto;
+        }
+
+
+
+        section.Missão {
+            grid-area: Missão;
+            text-align: center;
+            display: grid;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            background-color: #000;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-bottom: 20px;
+            color: #fff;
+            font-size: 18px;
+        }
+        
+        section.Visão  {
+            grid-area: Visão;
+            text-align: center;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            color: #fff;
+            font-size: 18px;
+        }
+        
+        section.Valores {
+            grid-area: Valores;
+            text-align: center;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            color: #fff;
+            font-size: 18px;
+        }
+        
+
+    nav.Banner {
+        grid-area: Banner;
+        place-items: center;
+        width: auto;
+        height: auto;
+    }
+    
+    section.Sobre {
+        grid-area: Sobre;
+        text-align: center;
+        display: grid;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    section.Serviços {
+        grid-area: Serviços;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+    }
+    
+    section.AVCB {
+        grid-area: AVCB;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;    
+        width: auto;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .AVCB {
+        width: 100%;
+        height: 100%;
+    }
+    
+    section.CLCB {
+        grid-area: CLCB;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .CLCB {
+        width: 100%;
+        height: 100%;
+    }
+    
+    section.Proj_Técnico {
+        grid-area: Proj_Técnico;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .Proj_Técnico {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img_serviços {
+        width: auto;
+        height: auto;
+    }
+    
+    section.Consultoria {
+        grid-area: Consultoria;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .Consultoria {
+        width: 100%;
+        height: 100%;
+    }
+
+    section.Carrossel {
+        grid-area: Carrossel;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin-top: 25px;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    section.Contato {
+        grid-area: Contato;
+        margin: 25px;
+    }
+
+    section.Redes_Sociais {
+        grid-area: Redes_Sociais;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin: 25px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding-top:55px ;
+        padding-left: 35px;
+    }
+
+    footer.Rodapé {
+        grid-area: Rodapé;
+        display: grid;
+        grid-template-rows: repeat(2 auto);
+        background-color: black;
+        padding: 25px;
+    }
+
+    .aside_rs {
+        display: flex;
+        justify-content: center;
+        position:relative;
+        width: auto;
+        height: auto;
+        border-right: 15px;
+        color:white;
+        font-size: 16px;    
+        padding: 12px 24px;
+        border:none;
+        cursor:pointer;
+        border-radius:5px;
+        }
+
+    .wrapper {
+        display: flex;
+        width: auto;
+        max-width: 1980px;
+        margin-inline: auto;
+        position: relative;
+        height: 166px;
+        overflow: hidden;
+        mask-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1) 20%,
+          rgba(0, 0, 0, 1) 80%,
+          rgba(0, 0, 0, 0)
+        );
+      }
+
+}
+
