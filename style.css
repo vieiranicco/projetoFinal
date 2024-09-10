@@ -1154,7 +1154,7 @@ h1.h1_bold {
         "Serviços Serviços Serviços Serviços"
         "AVCB CLCB Proj_Técnico Consultoria"
         "Carrossel Carrossel Carrossel Carrossel"
-        "Contato Contato Redes_Sociais ."
+        "Contato Contato Redes_Sociais Redes_Sociais"
         "Rodapé Rodapé Rodapé Rodapé";
         grid-template-rows: repeat(8, auto);
         grid-template-columns: 4fr;
@@ -1411,6 +1411,212 @@ h1.h1_bold {
           rgba(0, 0, 0, 0)
         );
       }
+
+      #grid_AVCB {
+        display: grid;
+        grid-template-areas:
+        "Cabeçalho Cabeçalho"
+        "Banner_AVCB Banner_AVCB "
+        "Serv_AVCB Serv_AVCB"
+        "Contato Redes_Sociais"
+        "Rodapé Rodapé";
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 2fr;
+    }
+
+    nav.Banner_AVCB {
+        grid-area: Banner_AVCB;
+        text-align: justify;
+        place-items: center;
+        width: auto;
+        height: auto;
+        background-image: url(../projetoFinal/PROJETO_FINAL/Imagens/Group_13.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 250px;
+        color: #fff;
+        padding: 60px;
+        font-weight: bolder;
+    }
+    
+    h2.titulo_2 {
+        text-align: justify;
+        position: sticky;
+        top: 0;
+        text-decoration: solid;
+        color: red;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: xx-large;
+    }
+
+    #grid_CLCB {
+        display: grid;
+        grid-template-areas:
+        "Cabeçalho Cabeçalho"
+        "Banner_CLCB Banner_CLCB"
+        "Serv_CLCB Serv_CLCB"
+        "Contato Redes_Sociais"
+        "Rodapé Rodapé";
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 2fr;
+    }
+    
+    section.Serv_CLCB {
+        grid-area: Serv_CLCB;
+        text-align: justify;
+        display: grid;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    
+    nav.Banner_CLCB {
+        grid-area: Banner_CLCB;
+        text-align: justify;
+        place-items: center;
+        width: auto;
+        height: auto;
+        background-image: url(../projetoFinal/PROJETO_FINAL/Imagens/Group_14.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 250px;
+        color: #fff;
+        padding: 60px;
+        font-weight: bolder;
+    }
+    
+    #grid_Proj_Tec {
+        display: grid;
+        grid-template-areas:
+        "Cabeçalho Cabeçalho"
+        "Banner_Proj_Tec Banner_Proj_Tec"
+        "Serv_Proj_Tec Serv_Proj_Tec"
+        "Contato Redes_Sociais"
+        "Rodapé Rodapé";
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 2fr;
+    }
+    
+    section.Serv_Proj_Tec {
+        grid-area: Serv_Proj_Tec;
+        text-align: justify;
+        display: grid;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    
+    nav.Banner_Proj_Tec {
+        grid-area: Banner_Proj_Tec;
+        text-align: justify;
+        place-items: center;
+        width: auto;
+        height: auto;
+        background-image: url("../projetoFinal/PROJETO_FINAL/Imagens/Group_11.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 400px;
+        color: #fff;
+        padding: 60px;
+        font-weight: bolder;
+    }
+    
+    #grid_Consultoria {
+        display: grid;
+        grid-template-areas:
+        "Cabeçalho Cabeçalho"
+        "Banner_Consultoria Banner_Consultoria"
+        "Serv_Consultoria Serv_Consultoria"
+        "Contato Redes_Sociais"
+        "Rodapé Rodapé";
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 2fr;
+    }
+
+    nav.Banner_Consultoria {
+        grid-area: Banner_Consultoria;
+        text-align: justify;
+        place-items: center;
+        width: auto;
+        height: auto;
+        background-image: url("../projetoFinal/PROJETO_FINAL/Imagens/Group_15.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 250px;
+        color: #fff;
+        padding: 60px;
+        font-weight: bolder;
+    }
+    
+    #grid_Projetos {
+        display: grid;
+        grid-template-areas:
+        "Cabeçalho Cabeçalho"
+        "Banner Banner"
+        "Tit_Brid Tit_Brid"
+        "Carrossel_Brid Carrossel_Brid"
+        "Explicação Explicação"
+        "Tit_Proj Tit_Proj"
+        "Carrossel_Proj Carrossel_Proj"
+        "Explicação1 Explicação1"
+        "Contato Redes_Sociais"
+        "Rodapé Rodapé";
+        grid-template-rows: repeat(10, auto);
+        grid-template-columns: 1fr;
+    }
+
+    section.Tit_Brid {
+        grid-area: Tit_Brid ;
+        text-align: justify;
+        display: grid;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    
+    section.Carrossel_Brid {
+        grid-area: Carrossel_Brid ;
+        text-align: justify;
+        display: grid;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+    
+    section.Explicação {
+        grid-area: Explicação ;
+        text-align: justify;
+        display: grid;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    
+    section.Tit_Proj {
+        grid-area: Tit_Proj ;
+        text-align: justify;
+        display: grid;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding: 30px;
+    }
 
 }
 
