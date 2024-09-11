@@ -1139,11 +1139,8 @@ h1.h1_bold {
 
 }
 
-@media(min-width: 1280px) {
 
-}
-
-@media(min-width: 1024px) {
+@media(min-width: 1280px)  {
     #grid {
         display: grid;
         grid-template-areas:
@@ -1156,7 +1153,7 @@ h1.h1_bold {
         "Carrossel Carrossel Carrossel Carrossel"
         "Contato Contato Redes_Sociais Redes_Sociais"
         "Rodapé Rodapé Rodapé Rodapé";
-        grid-template-rows: repeat(8, auto);
+        grid-template-rows: repeat(9, auto);
         grid-template-columns: 4fr;
     }
 
@@ -1308,6 +1305,7 @@ h1.h1_bold {
     
     section.Proj_Técnico {
         grid-area: Proj_Técnico;
+        display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -1594,6 +1592,10 @@ h1.h1_bold {
         padding-right: 30px;
         padding-bottom: 30px;
         padding-top: 20px;
+    }
+
+    section.contents {
+        display: contents;
     }
     
     section.Explicação {
