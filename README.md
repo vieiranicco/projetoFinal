@@ -1,4 +1,7 @@
-Projeto: Site Profissional - Nicollas Vieira Incêndios
+Projeto: 
+
+Site Profissional - Nicollas Vieira Incêndios
+
 Este projeto foi desenvolvido como parte do curso de HTML5 e CSS3 oferecido pela plataforma Coderhouse. O site é focado no tema Proteção e Combate a Incêndio,
 alinhado à minha área de atuação profissional. O objetivo principal do projeto é fornecer informações relevantes sobre medidas de prevenção e combate a incêndios,
 além de ser um portifólio e metódo de apresentar meu trabalho para quaiquer que tenham interesse.
